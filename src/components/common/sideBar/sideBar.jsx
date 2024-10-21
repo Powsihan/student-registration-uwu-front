@@ -11,7 +11,6 @@ import othericon from "../../../assets/icons/News.png";
 import sbLogoWhite from "../../../assets/logo_white.png";
 import { Link, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { logout } from "../../../redux/actions/user";
 
 const SideBar = () => {
   const userData = useSelector((state) => state.user.userData);

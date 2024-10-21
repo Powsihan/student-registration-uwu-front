@@ -3,8 +3,8 @@ import AuthLayout from "../../../components/layouts/authLayout/authLayout";
 import CommonButton from "../../../components/common/commonButton/commonButton";
 import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import back from "../../../assets/icons/Back.png";
-import { verifyOTP } from "../../../redux/actions/user";
 import { useDispatch } from "react-redux";
+import { verifyOTP } from "../../../service/user";
 
 const VerifyCode = () => {
   const [param, setParam] = useState();

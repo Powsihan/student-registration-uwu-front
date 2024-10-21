@@ -1,15 +1,12 @@
-
-
-
 import React, { useEffect, useState } from 'react'
 import "./dashboardLayout.css";
 import CommonNavBar from '../../common/navBar/navBar';
 import SideBar from '../../common/sideBar/sideBar';
 import { Outlet } from 'react-router-dom';
-import { getCurrentUser, logout } from '../../../redux/actions/user';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import { userData } from '../../../redux/reducers/userSlice';
+import { getCurrentUser, logout } from '../../../service/user';
 
 
 

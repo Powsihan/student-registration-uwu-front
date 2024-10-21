@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import AuthLayout from "../../../components/layouts/authLayout/authLayout";
 import { Link, useNavigate } from "react-router-dom";
 import CommonButton from "../../../components/common/commonButton/commonButton";
-import { getAllAcademicYear } from "../../../redux/actions/academicYear";
 import { EmailValidation } from "../../../utils/valitations/Valitation";
-import { userRegistration } from "../../../redux/actions/user";
 import { useDispatch } from "react-redux";
+import { getAllAcademicYear } from "../../../service/academicYear";
+import { userRegistration } from "../../../service/user";
 
 const SignUp = () => {
   const navigate = useNavigate();
